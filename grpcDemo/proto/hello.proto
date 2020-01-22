@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+
+// 定义Hello 服务
+service Hello {
+    rpc SayHello(HelloRequest) returns(HelloResponse) {}
+}
+
+// hello 发送的消息
+message HelloRequest {
+    string name = 1;    // 姓名
+    int32 age = 2;      // 年龄
+    repeated int32 weight = 3;  // 体重
+}
+
+// hello 返回消息
+message HelloResponse {
+    string code = 1;    // 状态码
+    string msg = 2;     // 状态信息
+    string data = 3;    // 返回的数据
+}
