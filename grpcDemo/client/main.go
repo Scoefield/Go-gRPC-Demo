@@ -1,12 +1,12 @@
 package main
 
 import (
+	"GitCode/Go-gRPC-Demo/grpcDemo/config"
+	hello "GitCode/Go-gRPC-Demo/grpcDemo/proto"
 	"context"
 	"fmt"
 	"google.golang.org/grpc"
 	"log"
-	"practicProject/grpcDemo/grpcDemo/config"
-	hello "practicProject/grpcDemo/grpcDemo/proto"
 )
 
 func main() {
