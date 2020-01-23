@@ -1,13 +1,13 @@
 package main
 
 import (
+	"GitCode/Go-gRPC-Demo/grpcDemo/config"
+	hello "GitCode/Go-gRPC-Demo/grpcDemo/proto"
 	"context"
 	"fmt"
 	"google.golang.org/grpc"
 	"log"
 	"net"
-	"practicProject/grpcDemo/grpcDemo/config"
-	hello "practicProject/grpcDemo/grpcDemo/proto"
 )
 
 // 定义helloService并实现约定的接口
