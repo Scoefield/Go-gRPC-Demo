@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package pb;
+
+service ChunkSrv {
+    rpc GetChunk(ChunkRequest) returns (stream ChunkResponse) {}
+    rpc GetZipFile(FileRequest) returns (stream FileResponse) {}
+}
+
+message ChunkRequest{
+    string md5 = 1;
+}
+
+message ChunkResponse {
+    bytes data = 1;
+}
+
+message FileRequest {
+    string filename = 1;
+}
+
+message FileResponse {
+    bytes filedata = 1;
+}
